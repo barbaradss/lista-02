@@ -1,6 +1,6 @@
 import java.util.Scanner;
 
-public class exercicio02 {
+public class FatorialWhile {
     public static void main(String[] args) {
         Scanner sc = new Scanner(System.in);
         System.out.println("Insira um número maior que 0");

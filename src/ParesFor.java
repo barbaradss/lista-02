@@ -1,4 +1,4 @@
-public class exercicio01 {
+public class ParesFor {
     public static void main(String[] args) {
 
         for (int i = 1; i <= 50; i++){

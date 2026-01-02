@@ -1,4 +1,4 @@
-public class exercicio07 {
+public class StringLog {
     public static void main(String[] args) {
         String[] logPedidos = {
                 "Pedido 12345 feito por Ana Silva encontra-se com status ENTREGUE.",

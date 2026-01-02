@@ -1,4 +1,4 @@
-public class exercicio05 {
+public class DeterminanteMatriz {
     public static void main(String[] args) {
         int[][] matriz = {
                 {1,2,3},

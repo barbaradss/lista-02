@@ -1,4 +1,4 @@
-public class exercicio06 {
+public class ArraySimples {
     public static void main(String[] args) {
         int[] lista = {4,5,7,3,1,34,12,7,19,27};
 

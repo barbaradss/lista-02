@@ -1,7 +1,7 @@
 import java.util.ArrayList;
 import java.util.Scanner;
 
-public class exercicio04 {
+public class MenuSwitch {
     public static void main(String[] args) {
         ArrayList<String> objetos = new ArrayList<String>();
         Scanner sc = new Scanner(System.in);

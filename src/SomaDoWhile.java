@@ -1,6 +1,6 @@
 import java.util.Scanner;
 
-public class exercicio03 {
+public class SomaDoWhile {
     public static void main(String[] args) {
         Scanner sc = new Scanner(System.in);
 

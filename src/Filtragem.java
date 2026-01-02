@@ -15,7 +15,7 @@ public class Filtragem {
 
         for (Map.Entry<String, Double>entry : produtos.entrySet()){
             if (entry.getValue() > 50.00){
-                System.out.println(entry.getKey() + " - R$ " + entry.getValue());
+                System.out.println(entry.getKey() + " R$ " + entry.getValue());
             }
         }
     }

@@ -1,3 +1,6 @@
+import java.util.regex.Matcher;
+import java.util.regex.Pattern;
+
 public class StringLog {
     public static void main(String[] args) {
         String[] logPedidos = {
@@ -10,9 +13,22 @@ public class StringLog {
                 "Pedido 12351 feito por Gabriel Martins encontra-se com status ENVIADO.",
                 "Pedido 12352 feito por Helena Pires encontra-se com status PROCESSANDO."
         };
-        for (int i = 0; i < logPedidos.length; i++){
-            if (logPedidos[i].contains("PROCESSANDO")){
-                System.out.println(logPedidos[i]);
+        String regex = "Pedido (\\d+) feito por (.+?) encontra-se com status (\\w+)";
+
+        Pattern pattern = Pattern.compile(regex);
+        for (String pedido : logPedidos){
+            if (pedido.contains("PROCESSANDO")){
+                Matcher matcher = pattern.matcher(pedido);
+                if (matcher.find()) {
+                    Integer idPedido = Integer.getInteger(matcher.group(1));
+                    String usuario = matcher.group(2);
+                    String status = matcher.group(3);
+
+                    System.out.println("ID do Pedido: " + idPedido);
+                    System.out.println("Usuário: " + usuario);
+                    System.out.println("Status: " + status);
+                    System.out.println("---");
+                }
             }
         }
     }
